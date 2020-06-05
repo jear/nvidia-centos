@@ -26,7 +26,7 @@ yum -y install kernel-headers
 
 yum -y install wget git bzip2 perl gcc gcc-c++
 
-yum install gcc gcc-c++ -y
+#yum install gcc gcc-c++ -y
 
 chmod +x NVIDIA-Linux-x86_64-418.56.run
 ./NVIDIA-Linux-x86_64-418.56.run
