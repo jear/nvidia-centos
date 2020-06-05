@@ -10,9 +10,9 @@ reboot
 rpm -ql kernel-devel
 
 rpm -qa kernel\*
-yum remove -y kernel-tools-libs-3.10.0-1062.4.3.el7.x86_64
+yum remove -y kernel-tools-libs-3.10.0-1127.4.3.el7.x86_64
 rpm -qa kernel\*
-yum remove -y kernel-3.10.0-1062.4.3.el7.x86_64
+yum remove -y kernel-3.10.0-1127.4.3.el7.x86_64
 
 yum remove -y kernel-3.10.0-957.el7.x86_64
 
