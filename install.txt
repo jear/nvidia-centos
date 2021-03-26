@@ -6,31 +6,23 @@ echo "blacklist nouveau" > /etc/modprobe.d/nouveau-blacklist.conf
 dracut /boot/initramfs-$(uname -r).img $(uname -r)
 reboot
 
-
 rpm -ql kernel-devel
-
 rpm -qa kernel\*
-yum remove -y kernel-tools-libs-3.10.0-1062.4.3.el7.x86_64
-rpm -qa kernel\*
-yum remove -y kernel-3.10.0-1062.4.3.el7.x86_64
-yum remove -y kernel-3.10.0-957.el7.x86_64
 
-#yum -y remove kernel-devel kernel-headers 
-#yum -y remove kernel-devel-$(uname -r) kernel-headers
+yum remove -y kernel-tools-libs-3.10.0-1160.el7.x86_64 kernel-tools-3.10.0-1160.el7.x86_64
+yum remove -y kernel-3.10.0-1160.el7.x86_64
+yum -y remove kernel-devel-$(uname -r)
 
-yum -y install kernel-devel-$(uname -r) 
+yum -y install kernel-devel
 yum -y install kernel-headers
-
-#yum -y install kernel-devel
-#yum -y install kernel-headers
-
 yum -y install wget git bzip2 perl gcc gcc-c++
 
-#yum install gcc gcc-c++ -y
 
-chmod +x NVIDIA-Linux-x86_64-418.56.run
-./NVIDIA-Linux-x86_64-418.56.run
-nvidia-smi
+yum -y install kernel-3.10.0-1160.11.1.el7.x86_64
+yum -y install kernel-devel-$(uname -r)
+
+chmod +x NVIDIA-Linux-x86_64-460.32.03.run
+./NVIDIA-Linux-x86_64-460.32.03.run
 
 
 ####################################################################
