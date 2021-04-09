@@ -21,7 +21,7 @@ yum -y install wget git bzip2 perl gcc gcc-c++
 yum -y install kernel-3.10.0-1160.11.1.el7.x86_64
 yum -y install kernel-devel-$(uname -r)
 
-https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html#runfile 
+#### https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html#runfile 
 BASE_URL=https://us.download.nvidia.com/tesla
 DRIVER_VERSION=450.80.02
 curl -fSsl -O $BASE_URL/$DRIVER_VERSION/NVIDIA-Linux-x86_64-$DRIVER_VERSION.run
